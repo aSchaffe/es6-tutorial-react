@@ -1,6 +1,9 @@
-import React from 'react';
+//Hi guy, thanks for this nice tutorial.
+// One question: I did some differnce changes in your code. Dose it use like this? Thanks for answer
 
-class AmortizationChart extends React.Component {
+import React, {Component} from 'react';
+
+export default class AmortizationChart extends Component {
     render() {
         // ES6: Arrow function shorthand when function consists of single line return statement
         let items = this.props.data.map((year, index) =>
@@ -33,5 +36,3 @@ class AmortizationChart extends React.Component {
         );
     }
 };
-
-export default AmortizationChart;
